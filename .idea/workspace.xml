@@ -6,7 +6,138 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee235cc-300e-4ed7-b30c-25af7ab2f851" name="Default" comment="" />
+    <list default="true" id="8ee235cc-300e-4ed7-b30c-25af7ab2f851" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/Filter/UniformEncodingFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerActiveServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerLoginServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerRegisterServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/FileDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/ManagerDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/NewsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/FileDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/ManagerDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/NewDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/FeedBack.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/Manager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/News.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/ViceFile.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/service/ManagerService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/DigestUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/JdbcUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/MailUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/UploadFileUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/lib/c3p0-0.9.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/lib/gson-2.6.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/lib/mail.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.10.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/Filter/UniformEncodingFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerActiveServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerLoginServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerRegisterServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/FileDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/ManagerDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/NewsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/impl/FileDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/impl/ManagerDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/impl/NewDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/FeedBack.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/Manager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/News.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/ViceFile.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/service/ManagerService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/DigestUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/JdbcUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/MailUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/ManagerStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/StatusCode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/UploadFileUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.6.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mail.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mchange-commons-java-0.2.10.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/news_app_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news_app.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/c3p0-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/c3p0-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/Filter/UniformEncodingFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLoginServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerRegisterServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SendCodeServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/FileDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/ManagerDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/NewsDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/FileDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/ManagerDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/NewDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/model/FeedBack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/model/Manager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/model/News.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/model/ViceFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/service/ManagerService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/DigestUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/JdbcUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/MailUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/ManagerStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/StatusCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/UploadFileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c3p0-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.jsp" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,6 +281,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -208,6 +342,7 @@
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -544,12 +679,12 @@
       <workItem from="1501286928150" duration="12116000" />
       <workItem from="1501309938176" duration="8334000" />
       <workItem from="1501319251284" duration="7692000" />
-      <workItem from="1501331363713" duration="7000000" />
+      <workItem from="1501331363713" duration="7103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63322000" />
+    <option name="totallyTimeSpent" value="63425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
@@ -564,13 +699,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13104524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4071763" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4078125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20497803" sideWeight="0.7394737" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20497803" sideWeight="0.26052633" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20497803" sideWeight="0.7387863" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20497803" sideWeight="0.26121372" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
