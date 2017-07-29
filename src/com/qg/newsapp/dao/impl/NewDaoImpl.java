@@ -18,8 +18,8 @@ public class NewDaoImpl implements NewsDao {
     private static Connection conn;
     private static PreparedStatement pstmt;
     private static ResultSet resultSet;
-    @Override
 
+    @Override
     /**
      * 获得从第几条开始的10条新闻
      * startNews    从第几条开始
@@ -28,7 +28,7 @@ public class NewDaoImpl implements NewsDao {
         try {
             List<News> newsList = new ArrayList<>();
             conn = JdbcUtil.getInstance().getConnection();
-            String sql = "SELECT * FROM news ";
+            String sql = "SELECT * FROM news ORDER BY news_id DESC";
             int compareStart = 0 ;
             pstmt = conn.prepareStatement(sql);
 
