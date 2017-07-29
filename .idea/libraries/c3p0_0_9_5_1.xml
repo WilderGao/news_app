@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="c3p0-0.9.5.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/c3p0-0.9.5.1/c3p0-0.9.5.1/c3p0-0.9.5.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/c3p0-0.9.5.1/c3p0-0.9.5.1/mchange-commons-java-0.2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
