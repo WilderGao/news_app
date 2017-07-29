@@ -6,8 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286b4f0d-a350-431a-8c7d-3ea37478b246" name="Default" comment="gaojiancheng">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news_app" />
+    <list default="true" id="286b4f0d-a350-431a-8c7d-3ea37478b246" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -541,7 +540,7 @@
       <updated>1501209973462</updated>
       <workItem from="1501209978829" duration="26875000" />
       <workItem from="1501259684689" duration="64000" />
-      <workItem from="1501288981002" duration="30915000" />
+      <workItem from="1501288981002" duration="30952000" />
     </task>
     <task id="LOCAL-00001" summary="gaojiancheng">
       <created>1501330998452</created>
@@ -557,11 +556,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501345129553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gaojiancheng">
+      <created>1501345427521</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1501345427521</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57854000" />
+    <option name="totallyTimeSpent" value="57891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
