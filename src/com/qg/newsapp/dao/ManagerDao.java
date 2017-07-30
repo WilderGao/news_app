@@ -17,6 +17,7 @@ public interface ManagerDao {
 
     /**
      * 注册管理员
+     *
      * @param manager 管理员实体类
      * @return 成功--true，失败--false
      */
@@ -24,6 +25,7 @@ public interface ManagerDao {
 
     /**
      * 根据激活码查找管理员
+     *
      * @param code 激活码
      * @return 管理员id
      */
@@ -31,13 +33,15 @@ public interface ManagerDao {
 
     /**
      * 更新管理员的状态
+     *
      * @param managerId 管理员id
-     * @param status 管理员状态
+     * @param status    管理员状态
      */
     void updateStatus(int managerId, String status);
 
     /**
      * 登录
+     *
      * @param manager 管理员实体类
      * @return 一个Manager实体类
      */
@@ -45,9 +49,18 @@ public interface ManagerDao {
 
     /**
      * 修改密码
-     * @param account 账户
+     *
+     * @param account  账户
      * @param password 密码
      * @return 成功——true，失败——false
      */
     boolean updatePassword(String account, String password);
+
+    /**
+     * 根据账号查找账户
+     *
+     * @param account
+     * @return
+     */
+    Manager getManagerByAccount(String account);
 }

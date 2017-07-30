@@ -1,7 +1,5 @@
 package com.qg.newsapp.utils;
 
-import com.sun.org.apache.bcel.internal.generic.RETURN;
-
 /**
  * 状态码
  */
@@ -22,9 +20,9 @@ public enum StatusCode {
         }
     },
     EMAIL_IS_NOT_EXIST {
-      public int getStatusCode() {
-          return 3; // 邮箱（用户名）不存在
-      }
+        public int getStatusCode() {
+            return 3; // 邮箱（用户名）不存在
+        }
     },
     EMAIL_FORMAT_IS_ERROR {
         public int getStatusCode() {
@@ -76,5 +74,6 @@ public enum StatusCode {
             return 16; // 验证码错误
         }
     };
+
     public abstract int getStatusCode();
 }

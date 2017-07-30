@@ -138,4 +138,23 @@ public class ManagerService {
         return map;
     }
 
+    /**
+     * 根据账号判断其状态
+     * @param account 账号
+     * @return 管理员状态
+     */
+    public int getManagerStatus(String account) {
+        Manager manager = dao.getManagerByAccount(account);
+        int state;
+        if (manager.getManagerStatus().equals(ManagerStatus.NORMAL.getName())) {
+            state = StatusCode.OK.getStatusCode(); // 正常
+        } else if (manager.getManagerStatus().equals(ManagerStatus.BE_SEAL.getName())) {
+            state = StatusCode.ACCOUNT_IS_CLOSED.getStatusCode(); // 被封号
+        } else if (manager.getManagerStatus().equals(ManagerStatus.UNAPPROVAL.getName())) {
+            state = StatusCode.ACCOUNT_IS_NOT_APPROVED.getStatusCode(); // 未审批
+        } else {
+            state = StatusCode.ACCOUNT_IS_NOT_ACTIVE.getStatusCode(); // 未激活
+        }
+        return state;
+    }
 }

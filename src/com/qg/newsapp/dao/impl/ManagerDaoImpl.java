@@ -10,7 +10,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ManagerDaoImpl implements ManagerDao {
+public class ManagerDaoImpl implements ManagerDao
+{
 
     @Override
     public boolean emailIsExist(String email) {
@@ -158,5 +159,41 @@ public class ManagerDaoImpl implements ManagerDao {
             JdbcUtil.close(pstmt, conn);
         }
         return false;
+    }
+
+    @Override
+    public Manager getManagerByAccount(String account) {
+        Manager manager = new Manager();
+        Connection conn = JdbcUtil.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet resultSet = null;
+        try {
+            String sql = "select * from manager where manager_account = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, account);
+            resultSet = pstmt.executeQuery();
+            if (resultSet.next()) {
+                manager.setManagerId(resultSet.getInt(1));
+                manager.setManagerAccount(resultSet.getString(2));
+                manager.setManagerPassword(resultSet.getString(3));
+                manager.setManagerName(resultSet.getString(4));
+                manager.setManagerSuper(resultSet.getInt(5));
+                manager.setManagerStatus(resultSet.getString(6));
+                return manager;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                JdbcUtil.close(pstmt, conn);
+            }
+        }
+        return null;
     }
 }

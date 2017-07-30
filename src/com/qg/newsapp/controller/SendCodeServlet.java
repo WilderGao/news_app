@@ -14,8 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 @WebServlet(name = "SendCodeServlet", urlPatterns = "/admin/sendverifycode")
@@ -48,6 +46,12 @@ public class SendCodeServlet extends HttpServlet {
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
+        int state = managerService.getManagerStatus(manager.getManagerAccount()); // 获取账户状态
+        if (state != StatusCode.OK.getStatusCode()) { // 不是正常状态
+            feedBack.setStatus(state);
+            response.getWriter().write(gson.toJson(feedBack));
+            return;
+        }
         String checkcode = getCheckcode();
         managerService.sendCheckcodeMail(manager.getManagerAccount(), checkcode);
         feedBack.setStatus(StatusCode.OK.getStatusCode());
@@ -66,6 +70,7 @@ public class SendCodeServlet extends HttpServlet {
         }
         return stringBuffer.toString();
     }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
