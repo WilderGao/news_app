@@ -2,6 +2,7 @@ package com.qg.newsapp.dao.impl;
 
 import com.qg.newsapp.dao.NewsDao;
 import com.qg.newsapp.model.News;
+import com.qg.newsapp.model.ViceFile;
 import com.qg.newsapp.utils.JdbcUtil;
 
 import java.sql.Connection;
@@ -126,12 +127,57 @@ public class NewDaoImpl implements NewsDao {
         return  0;
     }
 
+    public News GetNewsDetail(int newsId){
+        News news = new News();
+        List<ViceFile> viceFileList = new ArrayList<>();
+        try {
+            conn = JdbcUtil.getInstance().getConnection();
+            String sql = "SELECT * FROM vicefile RIGHT JOIN news ON news.news_id = vicefile.news_id WHERE vicefile.news_id = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,newsId);
+
+            resultSet = pstmt.executeQuery();
+            while (resultSet.next()){
+                ViceFile viceFile = new ViceFile();
+                news.setNewsTitle(resultSet.getString("news_title"));
+                news.setNewsAuthor(resultSet.getString("news_author"));
+                news.setNewsBody(resultSet.getString("news_mainbody"));
+                news.setManagerId(resultSet.getInt("manager_id"));
+                news.setNewsId(resultSet.getInt("news_id"));
+                news.setNewsFace(resultSet.getString("news_facepath"));
+                viceFile.setFileName(resultSet.getString("files_name"));
+                viceFile.setFilePath(resultSet.getString("files_path"));
+                viceFile.setFilesUUID(resultSet.getString("files_uuid"));
+                viceFile.setNewsId(resultSet.getInt("news_id"));
+
+                viceFileList.add(viceFile);
+            }
+            news.setFileList(viceFileList);
+            return news;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                resultSet.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            JdbcUtil.free(conn,pstmt);
+        }
+        return  null;
+
+    }
+
 
     //测试类
     public static void main(String[] args) {
-        News news = new News();
-        news.setFilesUUID("URIE");
-        System.out.println(new NewDaoImpl().GetNewsId(news));
+        News news = new NewDaoImpl().GetNewsDetail(1);
+        System.out.println(news.getNewsFace()+"新闻封面路径");
+        for (ViceFile viceFile : news.getFileList()){
+            System.out.println(viceFile.getFileName()+"附件名称");
+            System.out.println(viceFile.getFilePath()+"附件路径");
+            System.out.println(viceFile.getFilesUUID()+"附件UUID");
+        }
     }
 
 }

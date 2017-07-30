@@ -7,11 +7,11 @@ import com.qg.newsapp.model.FeedBack;
 import com.qg.newsapp.model.News;
 import com.qg.newsapp.model.ViceFile;
 import com.qg.newsapp.utils.NowTime;
+import com.qg.newsapp.utils.StatusCode;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.lang3.StringUtils;
-import org.json.simple.JSONObject;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -19,12 +19,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
 
@@ -159,7 +156,7 @@ public class AddNewsServlet extends HttpServlet {
         }finally {
             saveDir = new File(regetPath);
             FeedBack feedBack = new FeedBack();
-            feedBack.setState(1);
+            feedBack.setState(StatusCode.OK.getStatusCode());
             String feedBackString = gson.toJson(feedBack);
             out.write(feedBackString);
 
