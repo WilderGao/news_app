@@ -1,6 +1,8 @@
 package com.qg.newsapp.model;
 
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.List;
 
 /**
@@ -97,5 +99,15 @@ public class News {
 
     public void setFileList(List<ViceFile> fileList) {
         this.fileList = fileList;
+    }
+
+
+    public static void main(String[] args) {
+        try {
+            InetAddress inetAddress = InetAddress.getLocalHost();
+            System.out.println(inetAddress.getHostAddress());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
     }
 }

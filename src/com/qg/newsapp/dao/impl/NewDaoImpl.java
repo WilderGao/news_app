@@ -4,7 +4,9 @@ import com.qg.newsapp.dao.NewsDao;
 import com.qg.newsapp.model.News;
 import com.qg.newsapp.model.ViceFile;
 import com.qg.newsapp.utils.JdbcUtil;
+import com.qg.newsapp.utils.StatusCode;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,24 +25,18 @@ public class NewDaoImpl implements NewsDao {
     @Override
     /**
      * 获得从第几条开始的10条新闻
-     * startNews    从第几条开始
+     * newGet  从第几条新闻获得
      */
-    public List<News> GetNewsSummary(int startNews) {
+    public List<News> GetNewsSummary(News newsGet) {
         try {
             List<News> newsList = new ArrayList<>();
             conn = JdbcUtil.getInstance().getConnection();
-            String sql = "SELECT * FROM news ORDER BY news_id DESC";
-            int compareStart = 0 ;
+            String sql = "SELECT * FROM news WHERE news_id < ? ORDER BY news_id DESC ";
             pstmt = conn.prepareStatement(sql);
-
+            pstmt.setInt(1,newsGet.getNewsId());
             //得到结果集
             resultSet = pstmt.executeQuery();
             while (resultSet.next()){
-
-                compareStart++;
-                //跳过前面的几条新闻
-                if (compareStart < startNews)
-                    continue;
 
                 //获得从中得到的信息
                 News news = new News();
@@ -62,7 +58,7 @@ public class NewDaoImpl implements NewsDao {
             return newsList;
 
         } catch (SQLException e) {
-            System.out.println("出现错误");
+            e.printStackTrace();
         }finally {
            JdbcUtil.free(conn,pstmt);
         }
@@ -127,6 +123,12 @@ public class NewDaoImpl implements NewsDao {
         return  0;
     }
 
+
+    /**
+     * 通过新闻Id获得关于这篇新闻的所有信息
+     * @param newsId    新闻Id
+     * @return
+     */
     public News GetNewsDetail(int newsId){
         News news = new News();
         List<ViceFile> viceFileList = new ArrayList<>();
@@ -137,6 +139,8 @@ public class NewDaoImpl implements NewsDao {
             pstmt.setInt(1,newsId);
 
             resultSet = pstmt.executeQuery();
+            if (resultSet == null)
+                return null;
             while (resultSet.next()){
                 ViceFile viceFile = new ViceFile();
                 news.setNewsTitle(resultSet.getString("news_title"));
@@ -145,6 +149,7 @@ public class NewDaoImpl implements NewsDao {
                 news.setManagerId(resultSet.getInt("manager_id"));
                 news.setNewsId(resultSet.getInt("news_id"));
                 news.setNewsFace(resultSet.getString("news_facepath"));
+                viceFile.setFileId(resultSet.getInt("file_id"));
                 viceFile.setFileName(resultSet.getString("files_name"));
                 viceFile.setFilePath(resultSet.getString("files_path"));
                 viceFile.setFilesUUID(resultSet.getString("files_uuid"));
@@ -168,15 +173,66 @@ public class NewDaoImpl implements NewsDao {
 
     }
 
+    /**
+     * 通过新闻Id删除对应的新闻
+     * @param newsId 新闻Id
+     * @return  返回操作是否正常，正常返回1，错误返回5000
+     */
+    public int DeleteNews(int newsId){
+        try {
+        conn = JdbcUtil.getInstance().getConnection();
+        String sql = "DELETE news,vicefile FROM vicefile , news WHERE news.news_id = vicefile.news_id AND news.news_id = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,newsId);
+            //删除更新数据库
+            pstmt.executeUpdate();
+            return StatusCode.OK.getStatusCode();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JdbcUtil.free(conn,pstmt);
+        }
+        return StatusCode.Server_Error.getStatusCode();
+    }
+
+    public List<News> GetCurrentNews(){
+        try {
+            List<News> newsList = new ArrayList<>();
+            conn = JdbcUtil.getInstance().getConnection();
+            String sql = "SELECT * FROM news ORDER BY news_id DESC";
+            pstmt = conn.prepareStatement(sql);
+
+            resultSet = pstmt.executeQuery();
+            while (resultSet.next()){
+                News news = new News();
+                news.setNewsTitle(resultSet.getString("news_title"));
+                news.setNewsAuthor(resultSet.getString("news_author"));
+                news.setNewsId(resultSet.getInt("news_id"));
+                news.setNewsFace(resultSet.getString("news_facepath"));
+                news.setNewsBody(resultSet.getString("news_mainbody"));
+                news.setManagerId(resultSet.getInt("manager_id"));
+
+                newsList.add(news);
+            }
+
+            return  newsList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JdbcUtil.free(conn,pstmt);
+        }
+        return null;
+    }
+
 
     //测试类
     public static void main(String[] args) {
-        News news = new NewDaoImpl().GetNewsDetail(1);
-        System.out.println(news.getNewsFace()+"新闻封面路径");
-        for (ViceFile viceFile : news.getFileList()){
-            System.out.println(viceFile.getFileName()+"附件名称");
-            System.out.println(viceFile.getFilePath()+"附件路径");
-            System.out.println(viceFile.getFilesUUID()+"附件UUID");
+        News news = new News();
+        news.setNewsId(20);
+        List<News> dsa = new NewDaoImpl().GetNewsSummary(news);
+
+        for (News news1:dsa){
+            System.out.println(news1.getNewsId());
         }
     }
 

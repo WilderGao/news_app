@@ -1,5 +1,7 @@
 package com.qg.newsapp.model;
 
+import java.io.File;
+
 /**
  * 返回的一般格式
  */
@@ -22,4 +24,5 @@ public class FeedBack {
     public void setData(String data) {
         this.data = data;
     }
+
 }

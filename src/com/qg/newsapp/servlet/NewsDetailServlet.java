@@ -27,20 +27,25 @@ public class NewsDetailServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         bufferedReader = new BufferedReader(request.getReader());
+        printWriter = response.getWriter();
         StringBuilder getFromJson = new StringBuilder();
         String context;
         while ( (context = bufferedReader.readLine())!=null)
             getFromJson.append(context);
         Gson gson = new Gson();
         JSONObject receiveJson = gson.fromJson(getFromJson.toString(),JSONObject.class);
-        int newId = (int)receiveJson.get("newsId");
+        Double newId = (Double) receiveJson.get("newsId");
         //通过数据库查询和这个新闻Id有关的一切信息
-        news = newDao.GetNewsDetail(newId);
+        news = newDao.GetNewsDetail(newId.intValue());
+
         //返回参数和信息
-        feedBack.setState(StatusCode.OK.getStatusCode());
+        if (news == null)
+            feedBack.setState(StatusCode.NEWS_DETIAL_IS_EMPTY.getStatusCode());
+        else
+            feedBack.setState(StatusCode.OK.getStatusCode());
         feedBack.setData(gson.toJson(news));
         String feedBackString = gson.toJson(feedBack);
-        printWriter = response.getWriter();
+        response.setCharacterEncoding("utf-8");
         printWriter.write(feedBackString);
 
         //结束打印一下
