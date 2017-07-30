@@ -15,6 +15,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * 管理员注册
+ */
 @WebServlet(name = "ManagerRegisterServlet", urlPatterns = "/admin/addaccount")
 public class ManagerRegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,8 +35,6 @@ public class ManagerRegisterServlet extends HttpServlet {
             sb.append(line);
         }
         manager = gson.fromJson(String.valueOf(sb), Manager.class); // 把JSON数据转换为一个Manager对象
-        System.out.println(manager.toString());
-        System.out.println(manager.getManagerAccount());
         // 判断用户名是否已经存在
         if (managerService.emailIsExist(manager.getManagerAccount())) {
             feedBack.setStatus(StatusCode.EMAIL_EXIST.getStatusCode());

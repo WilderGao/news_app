@@ -10,8 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ManagerDaoImpl implements ManagerDao
-{
+public class ManagerDaoImpl implements ManagerDao {
 
     @Override
     public boolean emailIsExist(String email) {
@@ -88,7 +87,7 @@ public class ManagerDaoImpl implements ManagerDao
     }
 
     @Override
-    public void updateStatus(int managerId, String status) {
+    public boolean updateManagerStatus(int managerId, String status) {
         Connection conn = JdbcUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
@@ -96,12 +95,15 @@ public class ManagerDaoImpl implements ManagerDao
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, status);
             pstmt.setInt(2, managerId);
-            pstmt.executeUpdate();
+            if (pstmt.executeUpdate() != 0) {
+                return true;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             JdbcUtil.close(pstmt, conn);
         }
+        return false;
     }
 
     @Override
@@ -195,5 +197,82 @@ public class ManagerDaoImpl implements ManagerDao
             }
         }
         return null;
+    }
+
+    @Override
+    public boolean superManagerAddManager(Manager manager) {
+        Connection conn = JdbcUtil.getConnection();
+        PreparedStatement pstmt = null;
+        try {
+            String sql = "insert into manager(manager_account, manager_password, " +
+                    "manager_name, manager_super, manager_status) values (?, ?, ?, ?, ?)";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, manager.getManagerAccount());
+            pstmt.setString(2, manager.getManagerPassword());
+            pstmt.setString(3, manager.getManagerName());
+            pstmt.setInt(4,0);
+            pstmt.setString(5, ManagerStatus.NORMAL.getName());
+            if (pstmt.executeUpdate() != 0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            JdbcUtil.close(pstmt, conn);
+        }
+        return false;
+    }
+
+    @Override
+    public Manager getManagerById(int id) {
+        Manager manager = new Manager();
+        Connection conn = JdbcUtil.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet resultSet = null;
+        try {
+            String sql = "select * from manager where manager_id = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, id);
+            resultSet = pstmt.executeQuery();
+            if (resultSet.next()) {
+                manager.setManagerId(resultSet.getInt(1));
+                manager.setManagerAccount(resultSet.getString(2));
+                manager.setManagerPassword(resultSet.getString(3));
+                manager.setManagerName(resultSet.getString(4));
+                manager.setManagerSuper(resultSet.getInt(5));
+                manager.setManagerStatus(resultSet.getString(6));
+                return manager;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                JdbcUtil.close(pstmt, conn);
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void deleteManagerById(int id) {
+        Connection conn = JdbcUtil.getConnection();
+        PreparedStatement pstmt = null;
+        try {
+            String sql = "delete from manager where manager_id = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            JdbcUtil.close(pstmt, conn);
+        }
+
     }
 }

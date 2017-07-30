@@ -14,8 +14,8 @@ import java.util.Map;
  * 管理员逻辑判断类
  */
 public class ManagerService {
-    private ManagerDaoImpl dao = new ManagerDaoImpl();
-    private static MailUtil mailUtil = new MailUtil();
+    ManagerDaoImpl dao = new ManagerDaoImpl();
+    MailUtil mailUtil = new MailUtil();
 
     /**
      * 判断邮箱是否存在
@@ -50,7 +50,7 @@ public class ManagerService {
      * 注册用户，并调用发送邮箱方法
      *
      * @param manager 管理员实体类
-     * @return
+     * @return 成功——true，失败——false
      */
     public boolean register(Manager manager) {
         if (dao.addAccount(manager)) {
@@ -59,7 +59,6 @@ public class ManagerService {
         } else {
             return false;
         }
-
     }
 
     /**
@@ -108,7 +107,7 @@ public class ManagerService {
     public boolean active(String code) {
         int id = dao.queryManagerByCode(code);
         if (id != 0) {
-            dao.updateStatus(id, ManagerStatus.UNAPPROVAL.getName());
+            dao.updateManagerStatus(id, ManagerStatus.UNAPPROVAL.getName());
             return true;
         } else {
             return false;
@@ -116,9 +115,10 @@ public class ManagerService {
     }
 
     /**
+     * 管理员登录
      *
-     * @param manager
-     * @return
+     * @param manager 管理员实体类
+     * @return 一个带有状态码和Manager实体类的map
      */
     public Map<Integer, Manager> login(Manager manager) {
         Manager manager1 = dao.login(manager);
@@ -140,6 +140,7 @@ public class ManagerService {
 
     /**
      * 根据账号判断其状态
+     *
      * @param account 账号
      * @return 管理员状态
      */
@@ -156,5 +157,25 @@ public class ManagerService {
             state = StatusCode.ACCOUNT_IS_NOT_ACTIVE.getStatusCode(); // 未激活
         }
         return state;
+    }
+
+    /**
+     * 超级管理员添加管理员
+     *
+     * @param manager 管理员实体类
+     * @return 成功——true，失败——false
+     */
+    public boolean addManager(Manager manager) {
+        if (dao.superManagerAddManager(manager)) {
+            try {
+                mailUtil.sendMail(manager.getManagerAccount(), "注册通知",
+                        "<h1>你已经被设为管理人员</h1>", "text/html;charset=UTF-8");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -73,6 +73,11 @@ public enum StatusCode {
         public int getStatusCode() {
             return 16; // 验证码错误
         }
+    },
+    HAS_LOGIN {
+        public int getStatusCode() {
+            return 17; // 用户已经登录，不能重复登录
+        }
     };
 
     public abstract int getStatusCode();

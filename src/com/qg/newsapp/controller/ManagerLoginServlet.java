@@ -1,6 +1,7 @@
 package com.qg.newsapp.controller;
 
 import com.google.gson.Gson;
+import com.qg.newsapp.dao.impl.ManagerDaoImpl;
 import com.qg.newsapp.model.FeedBack;
 import com.qg.newsapp.model.Manager;
 import com.qg.newsapp.service.ManagerService;
@@ -11,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,6 +26,7 @@ public class ManagerLoginServlet extends HttpServlet {
         Manager manager;
         ManagerService managerService = new ManagerService();
         FeedBack feedBack = new FeedBack();
+        ManagerDaoImpl dao = new ManagerDaoImpl();
 
         // 读取JSON数据
         BufferedReader br = new BufferedReader(new
@@ -33,19 +36,29 @@ public class ManagerLoginServlet extends HttpServlet {
         while ((line = br.readLine()) != null) {
             sb.append(line);
         }
-        System.out.println(sb);
         manager = gson.fromJson(String.valueOf(sb), Manager.class);
-        System.out.println(manager);
         // 如果用户名不存在
         if (!managerService.emailIsExist(manager.getManagerAccount())) {
             feedBack.setStatus(StatusCode.EMAIL_IS_NOT_EXIST.getStatusCode());
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
+        // 防止用户在规定时间内重复登录
+        Manager manager2 = dao.getManagerByAccount(manager.getManagerAccount());
+        HttpSession session = request.getSession();
+        session.setMaxInactiveInterval(60 * 60); // Session过期时间为一个小时
+        String hasLogin = (String) request.getSession().getAttribute(String.valueOf(manager2.getManagerId()));
+        if (hasLogin != null) {
+            feedBack.setStatus(StatusCode.HAS_LOGIN.getStatusCode());
+            response.getWriter().write(gson.toJson(feedBack));
+            System.out.println(hasLogin);
+            return;
+        }
         Map<Integer, Manager> map = managerService.login(manager);
         Manager manager1 = map.get(1);
         Integer integer = getKeyByValue(map, manager1);
         int state = Integer.valueOf(integer);
+        request.getSession().setAttribute(String.valueOf(manager1.getManagerId()), "hasLogin");
         feedBack.setData(gson.toJson(manager1));
         feedBack.setStatus(state);
         response.getWriter().write(gson.toJson(feedBack));

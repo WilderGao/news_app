@@ -36,8 +36,9 @@ public interface ManagerDao {
      *
      * @param managerId 管理员id
      * @param status    管理员状态
+     * @return 成功——true，失败——false
      */
-    void updateStatus(int managerId, String status);
+    boolean updateManagerStatus(int managerId, String status);
 
     /**
      * 登录
@@ -59,8 +60,29 @@ public interface ManagerDao {
     /**
      * 根据账号查找账户
      *
-     * @param account
-     * @return
+     * @param account 账号
+     * @return Manager实体类
      */
     Manager getManagerByAccount(String account);
+
+    /**
+     * 超级管理员添加普通管理员
+     *
+     * @param manager Manager实体类
+     * @return 成功——true，失败——false
+     */
+    boolean superManagerAddManager(Manager manager);
+
+    /**
+     * 根据id查找管理员
+     * @param id 管理员id
+     * @return 管理员实体类
+     */
+    Manager getManagerById(int id);
+
+    /**
+     * 根据id删除管理员
+     * @param id 管理员id
+     */
+    void deleteManagerById(int id);
 }

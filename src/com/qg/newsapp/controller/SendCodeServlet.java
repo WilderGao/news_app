@@ -16,6 +16,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
 
+/**
+ * 生成激活码并发送到邮箱
+ */
 @WebServlet(name = "SendCodeServlet", urlPatterns = "/admin/sendverifycode")
 public class SendCodeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -46,6 +49,7 @@ public class SendCodeServlet extends HttpServlet {
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
+
         int state = managerService.getManagerStatus(manager.getManagerAccount()); // 获取账户状态
         if (state != StatusCode.OK.getStatusCode()) { // 不是正常状态
             feedBack.setStatus(state);
@@ -55,10 +59,14 @@ public class SendCodeServlet extends HttpServlet {
         String checkcode = getCheckcode();
         managerService.sendCheckcodeMail(manager.getManagerAccount(), checkcode);
         feedBack.setStatus(StatusCode.OK.getStatusCode());
-        request.getSession().setAttribute(manager.getManagerAccount(), checkcode);
+        request.getSession().setAttribute(manager.getManagerAccount(), checkcode); // 存进Session
         response.getWriter().write(gson.toJson(feedBack));
     }
 
+    /**
+     * 获得随机的验证码
+     * @return 验证码字符串
+     */
     private String getCheckcode() {
         String content = "1234567890";
         Random random = new Random();
