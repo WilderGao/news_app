@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.qg.newsapp.model.FeedBack;
 import com.qg.newsapp.model.Manager;
 import com.qg.newsapp.service.ManagerService;
+import com.qg.newsapp.utils.StatusCode;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,9 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 展示所有管理员账户（状态为正常的账户）
@@ -29,15 +28,14 @@ public class ShowManagerServlet extends HttpServlet {
 
         FeedBack feedBack = new FeedBack();
 
-        feedBack.setStatus(1);
-        feedBack.setData(gson.toJson(managers));
+        feedBack.setStatus(StatusCode.OK.getStatusCode());
+        feedBack.setData(gson.toJson(managers));  // 将 Manager 类的 List 集转为 json 字符串存入 feedBack 中的Data属性
 
         PrintWriter pw = new PrintWriter(response.getWriter());
-        pw.write(gson.toJson(feedBack));
-
+        pw.write(gson.toJson(feedBack));  // 将 feedBack 类转化为 json 字符串发送回移动端
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+
     }
 }

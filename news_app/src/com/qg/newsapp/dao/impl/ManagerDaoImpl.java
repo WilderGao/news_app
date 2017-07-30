@@ -2,6 +2,7 @@ package com.qg.newsapp.dao.impl;
 
 import com.qg.newsapp.dao.ManagerDao;
 import com.qg.newsapp.model.Manager;
+import com.qg.newsapp.model.News;
 import com.qg.newsapp.utils.ConnectionUtil;
 
 import java.beans.PropertyVetoException;
@@ -9,9 +10,6 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import static com.qg.newsapp.utils.ManagerStatus.NORMAL;
 
 /**
  * Created by K Lin on 2017/7/28.
@@ -23,7 +21,7 @@ public class ManagerDaoImpl implements ManagerDao {
         ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
         Connection conn = connectionUtil.getInstance().getConnection();
         try {
-            stmt = conn.prepareStatement("SELECT * FROM manager WHERE manager_status ='NORMAL'");
+            stmt = conn.prepareStatement("SELECT * FROM manager WHERE manager_status ='正常'");
             stmt.clearParameters();
 
             rs = stmt.executeQuery();
@@ -58,7 +56,7 @@ public class ManagerDaoImpl implements ManagerDao {
         ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
         Connection conn = connectionUtil.getInstance().getConnection();
         try {
-            stmt = conn.prepareStatement("SELECT * FROM manager WHERE manager_status ='UNAPPROVAL'");
+            stmt = conn.prepareStatement("SELECT * FROM manager WHERE manager_status ='未审批'");
             stmt.clearParameters();
 
             rs = stmt.executeQuery();
@@ -86,46 +84,36 @@ public class ManagerDaoImpl implements ManagerDao {
         }
         return null;
     }
-    public boolean updateStatus(int managerId,String status){
+
+    public List<News> showOwnNews(int managerId){
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        boolean ok = false;
         ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
-        Connection conn = connectionUtil.getConnection();
-
+        Connection conn = connectionUtil.getInstance().getConnection();
         try {
-            stmt = conn.prepareStatement("UPDATE manager SET manager_status=? WHERE manager_id='"+managerId+"'");
-            stmt.setString(1,status);
-            stmt.execute();
+            stmt = conn.prepareStatement("SELECT * FROM news WHERE manager_id = '"+managerId+"'");
             stmt.clearParameters();
 
-            ok=true;
+            rs = stmt.executeQuery();
+            List<News> result = new ArrayList<News>();
+            while (rs.next()) {
+                News news = new News();
+
+                news.setNewsId(rs.getInt("news_id"));
+                news.setNewsTitle(rs.getString("news_title"));
+                news.setNewsFace(rs.getString("news_facepath"));
+                news.setNewsTime(rs.getString("news_time"));
+
+                result.add(news);
+            }
+
+            return result;
+
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            connectionUtil.free(rs,stmt,conn);
-        }
-        return ok;
-    }
-    public boolean deleteAccount(int managerId){
-        PreparedStatement stmt = null;
-        ResultSet rs = null;
-        boolean ok = false;
-        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
-        Connection conn = connectionUtil.getConnection();
-        try{
-            stmt=conn.prepareStatement("DELETE from manager where manager_id='"+managerId+"'");
-            stmt.executeUpdate();
-            stmt.clearParameters();
-
-            ok=true;
-        }
-        catch(SQLException e)
-        {
-            e.printStackTrace();
-        }finally{
+        } finally {
             connectionUtil.free(rs, stmt, conn);
         }
-        return ok;
+        return null;
     }
 }

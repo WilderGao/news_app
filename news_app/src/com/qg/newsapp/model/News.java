@@ -10,7 +10,7 @@ public class News {
     private  int newsId;     // 新闻Id
     private String newsAuthor ; // 新闻撰写人
     private int managerId;  //新闻撰写人id
-    private  String newsTitle ;     // 新闻标题
+    private  String newsTitle;     // 新闻标题
     private String newsBody;     //新闻主要内容
     private  String newsTime ;      //新闻发布时间
     private String newsUUID;        //新闻UUID
