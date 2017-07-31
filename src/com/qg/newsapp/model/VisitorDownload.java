@@ -3,6 +3,7 @@ package com.qg.newsapp.model;
 public class VisitorDownload {
     private int fileId;
     private String downloader;
+    private String downloadTime;
 
     public int getFileId() {
         return fileId;
@@ -18,5 +19,13 @@ public class VisitorDownload {
 
     public void setDownloader(String downloader) {
         this.downloader = downloader;
+    }
+
+    public String getDownloadTime() {
+        return downloadTime;
+    }
+
+    public void setDownloadTime(String downloadTime) {
+        this.downloadTime = downloadTime;
     }
 }

@@ -225,15 +225,5 @@ public class NewDaoImpl implements NewsDao {
     }
 
 
-    //测试类
-    public static void main(String[] args) {
-        News news = new News();
-        news.setNewsId(20);
-        List<News> dsa = new NewDaoImpl().GetNewsSummary(news);
-
-        for (News news1:dsa){
-            System.out.println(news1.getNewsId());
-        }
-    }
 
 }

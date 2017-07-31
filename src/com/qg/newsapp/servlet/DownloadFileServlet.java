@@ -6,6 +6,7 @@ import com.qg.newsapp.dao.impl.VisitorDownloadDaolmpl;
 import com.qg.newsapp.model.FeedBack;
 import com.qg.newsapp.model.Visitor;
 import com.qg.newsapp.model.VisitorDownload;
+import com.qg.newsapp.utils.NowTime;
 import com.qg.newsapp.utils.StatusCode;
 
 import javax.servlet.ServletException;
@@ -34,6 +35,7 @@ public class DownloadFileServlet extends HttpServlet {
             getFromJson.append(context);
         }
         VisitorDownload visitorDownload = gson.fromJson(String.valueOf(getFromJson), VisitorDownload.class);
+        visitorDownload.setDownloadTime(NowTime.CurrentTime());
        int status =  visitorDownloadDaolmpl.InsertVisitorDownLoad(visitorDownload);
        response.setCharacterEncoding("utf-8");
        //响应参数

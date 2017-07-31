@@ -1,6 +1,9 @@
 package com.qg.newsapp.utils;
 
-public enum  StatusCode {
+/**
+ * 状态码
+ */
+public enum StatusCode {
     OK {
         public int getStatusCode() {
             return 1; // 正常
@@ -18,17 +21,7 @@ public enum  StatusCode {
     },
     EMAIL_IS_NOT_EXIST {
         public int getStatusCode() {
-            return 3; // 邮箱（用户名）已存在
-        }
-    },
-    EMAIL_IS_EMPTY {
-        public int getStatusCode() {
-            return 4; // 邮箱为空
-        }
-    },
-    PASSWORD_IS_EMPTY {
-        public int getStatusCode() {
-            return 5; // 密码为空
+            return 3; // 邮箱（用户名）不存在
         }
     },
     EMAIL_FORMAT_IS_ERROR {
@@ -75,6 +68,17 @@ public enum  StatusCode {
         public int getStatusCode() {
             return 15; // 新闻封面为空
         }
+    },
+    VERIFYCODE_IS_ERROR {
+        public int getStatusCode() {
+            return 16; // 验证码错误
+        }
+    },
+    HAS_LOGIN {
+        public int getStatusCode() {
+            return 17; // 用户已经登录，不能重复登录
+        }
     };
+
     public abstract int getStatusCode();
 }

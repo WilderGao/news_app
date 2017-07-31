@@ -5,7 +5,7 @@ public class ViceFile {
     private  int newsId;     //附件对应的新闻Id
     private  String fileName;   //附件名称
     private String filePath;     //文件保存路径
-    private  String fileDownLoadTime;   //附件上传时间
+    private  int fileDownLoadTime;   //附件上传次数
     private  String filesUUID;      //附件的UUID
 
     public int getFileId() {
@@ -40,11 +40,11 @@ public class ViceFile {
         this.filePath = filePath;
     }
 
-    public String getFileDownLoadTime() {
+    public int getFileDownLoadTime() {
         return fileDownLoadTime;
     }
 
-    public void setFileDownLoadTime(String fileDownLoadTime) {
+    public void setFileDownLoadTime(int fileDownLoadTime) {
         this.fileDownLoadTime = fileDownLoadTime;
     }
 

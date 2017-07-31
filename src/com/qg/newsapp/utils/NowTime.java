@@ -6,7 +6,7 @@ import java.util.Calendar;
 public class NowTime {
     public static String CurrentTime(){
         Calendar cal = Calendar.getInstance();
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm");
         String dateStr = formatter.format(cal.getTime());
         return  dateStr;
     }
