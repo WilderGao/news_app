@@ -7,60 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ee235cc-300e-4ed7-b30c-25af7ab2f851" name="Default" comment="2017-07-30-10-30">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/UploadFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/UploadFileUtil.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ApprovalManagerServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ApprovalManagerServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/ConnectionUtil.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/c3p0-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/JdbcUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/c3p0-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/utils/JdbcUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/c3p0-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/utils/JdbcUtil.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerActiveServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerActiveServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerLoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerLoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet$1.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerRegisterServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/ManagerRegisterServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet$1.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/RestrictAccountServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/RestrictAccountServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet$1.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet$1.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SuperManagerAddManagerServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/controller/SuperManagerAddManagerServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/ManagerDao.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/ManagerDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/ManagerDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/ManagerDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/FeedBack.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/FeedBack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/Manager.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/Manager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/service/ManagerService.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/service/ManagerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ApprovalManagerServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ApprovalManagerServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerActiveServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerActiveServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerLoginServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerLoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet$1.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerLogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerRegisterServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/ManagerRegisterServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet$1.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/RefuseManagerServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/RestrictAccountServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/RestrictAccountServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet$1.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SendCodeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet$1.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SetNewPasswordServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SuperManagerAddManagerServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/controller/SuperManagerAddManagerServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/ManagerDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/ManagerDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/impl/ManagerDaoImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/dao/impl/ManagerDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/FeedBack.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/FeedBack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/Manager.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/model/Manager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/service/ManagerService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qg/newsapp/service/ManagerService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ApprovalManagerServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ApprovalManagerServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLoginServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLogoutServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLogoutServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerRegisterServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerRegisterServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/RefuseManagerServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/RefuseManagerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/RestrictAccountServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/RestrictAccountServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SendCodeServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SendCodeServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SuperManagerAddManagerServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/controller/SuperManagerAddManagerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/dao/ManagerDao.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/ManagerDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/ManagerDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/ManagerDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/model/FeedBack.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/model/FeedBack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/model/Manager.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/model/Manager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/service/ManagerService.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/service/ManagerService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,14 +52,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ManagerStatus.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/ManagerStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding>
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SetNewPasswordServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1600">
-              <caret line="80" column="28" lean-forward="false" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="824">
+              <caret line="65" column="50" lean-forward="true" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,11 +78,81 @@
       <file leaf-file-name="SuperManagerAddManagerServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SuperManagerAddManagerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="40">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApprovalManagerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ApprovalManagerServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-140">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerActiveServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DigestUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/DigestUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerLoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/ConnectionUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/MailUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,99 +160,22 @@
       <file leaf-file-name="ManagerDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/ManagerDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-              <folding>
-                <marker date="1501506887013" expanded="true" signature="559:606" ph="select * fro... manager" />
-                <marker date="1501506887013" expanded="true" signature="1149:1296" ph="insert into manager... " />
-                <marker date="1501506887013" expanded="true" signature="2118:2174" ph="select manag... manager" />
-                <marker date="1501506887013" expanded="true" signature="3048:3106" ph="update manag... " />
-                <marker date="1501506887013" expanded="true" signature="3762:3834" ph="select * fro... manager" />
-                <marker date="1501506887013" expanded="true" signature="5201:5266" ph="update manag... " />
-                <marker date="1501506887013" expanded="true" signature="5936:5983" ph="select * fro... manager" />
-                <marker date="1501506887013" expanded="true" signature="7253:7400" ph="insert into manager... " />
-                <marker date="1501506887013" expanded="true" signature="8252:8294" ph="select * fro... manager" />
-                <marker date="1501506887013" expanded="true" signature="9539:9579" ph="delete from " />
-                <marker date="1501506887013" expanded="true" signature="10059:10117" ph="update manag... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/NewDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RefuseManagerServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/RefuseManagerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+            <state relative-caret-position="220">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1501509635271" expanded="true" signature="641:688" ph="select * fro... manager" />
+                <marker date="1501509635271" expanded="true" signature="1318:1465" ph="insert into manager... " />
+                <marker date="1501509635271" expanded="true" signature="2374:2430" ph="select manag... manager" />
+                <marker date="1501509635271" expanded="true" signature="3161:3219" ph="update manag... " />
+                <marker date="1501509635271" expanded="true" signature="3962:4034" ph="select * fro... manager" />
+                <marker date="1501509635271" expanded="true" signature="5258:5323" ph="update manag... " />
+                <marker date="1501509635271" expanded="true" signature="6080:6127" ph="select * fro... manager" />
+                <marker date="1501509635271" expanded="true" signature="7255:7402" ph="insert into manager... " />
+                <marker date="1501509635271" expanded="true" signature="8341:8383" ph="select * fro... manager" />
+                <marker date="1501509635271" expanded="true" signature="9485:9525" ph="delete from " />
+                <marker date="1501509635271" expanded="true" signature="10092:10150" ph="update manag... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/ManagerDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
-              <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/service/ManagerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerRegisterServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerRegisterServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedBack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/model/FeedBack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding>
-                <element signature="e#298#299#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/model/Manager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1220">
-              <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -238,7 +211,6 @@
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/dao/FileDao.java" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/model/News.java" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/Filter/UniformEncodingFilter.java" />
-        <option value="$PROJECT_DIR$/src/com/qg/newsapp/utils/ConnectionUtil.java" />
         <option value="$PROJECT_DIR$/src/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/utils/JdbcUtils.java" />
         <option value="$PROJECT_DIR$/src/c3p0-config.xml" />
@@ -258,13 +230,14 @@
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/RefuseManagerServlet.java" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/RestrictAccountServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/SuperManagerAddManagerServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerRegisterServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/SendCodeServlet.java" />
         <option value="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/ManagerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/qg/newsapp/utils/ConnectionUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerRegisterServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/SendCodeServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java" />
       </list>
     </option>
   </component>
@@ -352,21 +325,7 @@
               <item name="news_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="newsapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="newsapp" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="newsapp" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="news_app" type="b2602c69:ProjectViewProjectNode" />
@@ -379,6 +338,19 @@
               <item name="news_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="news_app" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="news_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news_app" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="news_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news_app" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,8 +374,8 @@
       <recent name="com.qg.newsapp.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA-File\news_app\src\com\qg\newsapp\model" />
       <recent name="D:\IDEA-File\news_app\src\com\qg\newsapp\utils" />
+      <recent name="D:\IDEA-File\news_app\src\com\qg\newsapp\model" />
       <recent name="D:\IDEA-File\news_app\src" />
       <recent name="D:\IDEA-File\news_app\src\com\qg\newsapp\Filter" />
       <recent name="D:\IDEA-File\news_app\web\WEB-INF\lib" />
@@ -629,12 +601,12 @@
       <workItem from="1501379322501" duration="7245000" />
       <workItem from="1501393665644" duration="12733000" />
       <workItem from="1501419997246" duration="2052000" />
-      <workItem from="1501485911303" duration="18213000" />
+      <workItem from="1501485911303" duration="20488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103683000" />
+    <option name="totallyTimeSpent" value="105958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
@@ -650,12 +622,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13104524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3484375" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1703125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20717423" sideWeight="0.865625" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.865625" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20717423" sideWeight="0.134375" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -758,7 +730,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/ManegerDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/ConnectionUtil.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -820,49 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/DigestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/JdbcUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/MailUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/ManagerStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="e#121#122#0" expanded="false" />
-            <element signature="e#163#164#0" expanded="false" />
-            <element signature="e#221#222#0" expanded="false" />
-            <element signature="e#257#258#0" expanded="false" />
-            <element signature="e#317#318#0" expanded="false" />
-            <element signature="e#353#354#0" expanded="false" />
-            <element signature="e#408#409#0" expanded="false" />
-            <element signature="e#444#445#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,104 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ApprovalManagerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/RestrictAccountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SendCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="80" column="28" lean-forward="false" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SuperManagerAddManagerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/ManagerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <marker date="1501506887013" expanded="true" signature="559:606" ph="select * fro... manager" />
-            <marker date="1501506887013" expanded="true" signature="1149:1296" ph="insert into manager... " />
-            <marker date="1501506887013" expanded="true" signature="2118:2174" ph="select manag... manager" />
-            <marker date="1501506887013" expanded="true" signature="3048:3106" ph="update manag... " />
-            <marker date="1501506887013" expanded="true" signature="3762:3834" ph="select * fro... manager" />
-            <marker date="1501506887013" expanded="true" signature="5201:5266" ph="update manag... " />
-            <marker date="1501506887013" expanded="true" signature="5936:5983" ph="select * fro... manager" />
-            <marker date="1501506887013" expanded="true" signature="7253:7400" ph="insert into manager... " />
-            <marker date="1501506887013" expanded="true" signature="8252:8294" ph="select * fro... manager" />
-            <marker date="1501506887013" expanded="true" signature="9539:9579" ph="delete from " />
-            <marker date="1501506887013" expanded="true" signature="10059:10117" ph="update manag... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/NewDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1077,10 +907,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerRegisterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="348">
+          <caret line="36" column="92" lean-forward="false" selection-start-line="36" selection-start-column="92" selection-end-line="36" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1089,10 +935,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/RefuseManagerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="180">
           <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/RestrictAccountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SendCodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SetNewPasswordServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="65" column="50" lean-forward="true" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/SuperManagerAddManagerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ApprovalManagerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerActiveServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/controller/ManagerLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/ConnectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/ManagerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1501509635271" expanded="true" signature="641:688" ph="select * fro... manager" />
+            <marker date="1501509635271" expanded="true" signature="1318:1465" ph="insert into manager... " />
+            <marker date="1501509635271" expanded="true" signature="2374:2430" ph="select manag... manager" />
+            <marker date="1501509635271" expanded="true" signature="3161:3219" ph="update manag... " />
+            <marker date="1501509635271" expanded="true" signature="3962:4034" ph="select * fro... manager" />
+            <marker date="1501509635271" expanded="true" signature="5258:5323" ph="update manag... " />
+            <marker date="1501509635271" expanded="true" signature="6080:6127" ph="select * fro... manager" />
+            <marker date="1501509635271" expanded="true" signature="7255:7402" ph="insert into manager... " />
+            <marker date="1501509635271" expanded="true" signature="8341:8383" ph="select * fro... manager" />
+            <marker date="1501509635271" expanded="true" signature="9485:9525" ph="delete from " />
+            <marker date="1501509635271" expanded="true" signature="10092:10150" ph="update manag... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/MailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/DigestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/utils/ManagerStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
           </folding>
         </state>
       </provider>

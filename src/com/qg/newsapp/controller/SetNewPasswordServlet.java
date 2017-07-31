@@ -39,7 +39,6 @@ public class SetNewPasswordServlet extends HttpServlet {
         }
         Map<String, String> map = gson.fromJson(String.valueOf(sb), new TypeToken<Map<String, String>>() {
         }.getType());
-        System.out.println(map);
 
         // 邮箱格式不正确
         if (!managerService.isRigthEmail(map.get("managerAccount"))) {
@@ -63,8 +62,8 @@ public class SetNewPasswordServlet extends HttpServlet {
         String checkcode = (String) request.getSession().getAttribute(String.valueOf(map.get("managerAccount")));
         System.out.println(checkcode);
         if (checkcode.equals(map.get("verifyCode"))) {
-            if (dao.updatePassword((String) map.get("managerAccount"),
-                    (String) map.get("managerPassword"))) {
+            if (dao.updatePassword(map.get("managerAccount"),
+                    map.get("managerPassword"))) {
                 feedBack.setState(StatusCode.OK.getStatusCode()); // 正常
                 response.getWriter().write(gson.toJson(feedBack));
             } else {

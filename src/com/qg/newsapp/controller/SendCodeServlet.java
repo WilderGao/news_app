@@ -38,7 +38,6 @@ public class SendCodeServlet extends HttpServlet {
         }
         map = gson.fromJson(String.valueOf(sb), new TypeToken<Map<String, String>>() {
         }.getType());
-        System.out.println(map);
         // 邮箱格式不正确
         if (!managerService.isRigthEmail(map.get("managerAccount"))) {
             feedBack.setState(StatusCode.EMAIL_FORMAT_IS_ERROR.getStatusCode());

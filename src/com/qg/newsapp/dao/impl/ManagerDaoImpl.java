@@ -2,7 +2,7 @@ package com.qg.newsapp.dao.impl;
 
 import com.qg.newsapp.dao.ManagerDao;
 import com.qg.newsapp.model.Manager;
-import com.qg.newsapp.utils.JdbcUtil;
+import com.qg.newsapp.utils.ConnectionUtil;
 import com.qg.newsapp.utils.ManagerStatus;
 
 import java.sql.Connection;
@@ -14,7 +14,8 @@ public class ManagerDaoImpl implements ManagerDao {
 
     @Override
     public boolean emailIsExist(String email) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
             String sql = "select * from manager where manager_account = ?";
@@ -26,14 +27,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(pstmt, conn);
+            connectionUtil.free(null, pstmt, conn);
         }
         return false;
     }
 
     @Override
     public boolean addAccount(Manager manager) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
             String sql = "insert into manager(manager_account, manager_password, " +
@@ -50,14 +52,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(pstmt, conn);
+            connectionUtil.free(null, pstmt, conn);
         }
         return false;
     }
 
     @Override
     public int queryManagerByCode(String code) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         ResultSet resultSet = null;
         try {
@@ -72,23 +75,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (resultSet != null) {
-                    resultSet.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
-                JdbcUtil.close(pstmt, conn);
-            }
-
+            connectionUtil.free(resultSet, pstmt, conn);
         }
         return 0;
     }
 
     @Override
     public boolean updateManagerStatus(int managerId, String status) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
             String sql = "update manager set manager_status = ? where manager_id = ?";
@@ -101,14 +96,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(pstmt, conn);
+            connectionUtil.free(null, pstmt, conn);
         }
         return false;
     }
 
     @Override
     public Manager login(Manager manager) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         ResultSet resultSet = null;
         Manager manager1 = new Manager();
@@ -131,22 +127,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (resultSet != null) {
-                    resultSet.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
-                JdbcUtil.close(pstmt, conn);
-            }
+           connectionUtil.free(resultSet, pstmt, conn);
         }
         return null;
     }
 
     @Override
     public boolean updatePassword(String account, String password) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
             String sql = "update manager set manager_password = ? where manager_account = ?";
@@ -159,7 +148,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(pstmt, conn);
+            connectionUtil.free(null, pstmt, conn);
         }
         return false;
     }
@@ -167,7 +156,8 @@ public class ManagerDaoImpl implements ManagerDao {
     @Override
     public Manager getManagerByAccount(String account) {
         Manager manager = new Manager();
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         ResultSet resultSet = null;
         try {
@@ -188,22 +178,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (resultSet != null) {
-                    resultSet.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
-                JdbcUtil.close(pstmt, conn);
-            }
+            connectionUtil.free(resultSet, pstmt, conn);
         }
         return null;
     }
 
     @Override
     public boolean superManagerAddManager(Manager manager) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
             String sql = "insert into manager(manager_account, manager_password, " +
@@ -220,7 +203,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(pstmt, conn);
+            connectionUtil.free(null, pstmt, conn);
         }
         return false;
     }
@@ -228,7 +211,8 @@ public class ManagerDaoImpl implements ManagerDao {
     @Override
     public Manager getManagerById(int id) {
         Manager manager = new Manager();
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         ResultSet resultSet = null;
         try {
@@ -249,22 +233,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (resultSet != null) {
-                    resultSet.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
-                JdbcUtil.close(pstmt, conn);
-            }
+           connectionUtil.free(resultSet, pstmt, conn);
         }
         return null;
     }
 
     @Override
     public void deleteManagerById(int id) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
             String sql = "delete from manager where manager_id = ?";
@@ -274,14 +251,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(pstmt, conn);
+            connectionUtil.free(null, pstmt, conn);
         }
 
     }
 
     @Override
     public void updateManagerLoginStatus(int id, int loginStatus) {
-        Connection conn = JdbcUtil.getConnection();
+        ConnectionUtil connectionUtil = ConnectionUtil.getInstance();
+        Connection conn = connectionUtil.getConnection();
         PreparedStatement pstmt = null;
         try {
             String sql = "update manager set manager_online = ? where manager_id = ?";
@@ -292,7 +270,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(pstmt, conn);
+            connectionUtil.free(null, pstmt, conn);
         }
     }
 }

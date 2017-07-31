@@ -1,6 +1,5 @@
 package com.qg.newsapp.controller;
 
-import com.google.gson.Gson;
 import com.qg.newsapp.model.FeedBack;
 import com.qg.newsapp.service.ManagerService;
 import com.qg.newsapp.utils.StatusCode;
@@ -26,7 +25,6 @@ public class ManagerActiveServlet extends HttpServlet {
             throws ServletException, IOException {
         String code = request.getParameter("code"); // 用户激活码
         ManagerService managerService = new ManagerService();
-        Gson gson = new Gson();
         FeedBack feedBack = new FeedBack();
 
         if (managerService.active(code)) {

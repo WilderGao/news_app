@@ -35,7 +35,6 @@ public class ManagerRegisterServlet extends HttpServlet {
             sb.append(line);
         }
         manager = gson.fromJson(String.valueOf(sb), Manager.class); // 把JSON数据转换为一个Manager对象
-        System.out.println(manager.toString());
         // 判断用户名是否已经存在
         if (managerService.emailIsExist(manager.getManagerAccount())) {
             feedBack.setState(StatusCode.EMAIL_EXIST.getStatusCode());
