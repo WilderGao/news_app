@@ -19,6 +19,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -74,22 +75,24 @@ public class AddNewsServlet extends HttpServlet {
                     if (getNewsJson.getNewsFace()!=null){
                         //获得封面路径
                         String originalPath = item.getName();
-                        String originalFileName = originalPath.substring(originalPath.lastIndexOf('\\') + 1);
+                        String originalFileName = originalPath.substring(originalPath.lastIndexOf('/') + 1);
                         //判断成功则证明第一张是一张封面，存到不一样的路径
                         File saveFace = new File("D://news_app//web//news_face");
                         if (!saveFace.exists())
                             saveFace.mkdir();
                         //将封面保存到指定的路径
-                        File getFaceFile = new File(saveFace.getPath()+"\\"+originalFileName);
+                        newDao.AddNews(getNewsJson);
+                        getNewId = newDao.GetNewsId(getNewsJson);
+                        File getFaceFile = new File(saveFace.getPath()+"\\"+"newsId"+getNewId+originalFileName);
                         item.write(getFaceFile);
 
                         //接下来设置新闻类中封面的路径，并将整个新闻插入到新闻类数据库中
-                        getNewsJson.setNewsFace(saveDir.getPath()+"\\"+originalFileName);
+                        getNewsJson.setNewsFace(saveDir.getPath()+"\\"+"newsId"+getNewId+originalFileName);
                         getNewsJson.setNewsTime(NowTime.CurrentTime());
+                        //修改封面的路径，再次更新数据库的数据
+                        newDao.UpdateNews(getNewsJson);
 
-                        newDao.AddNews(getNewsJson);
                         //并且得到新闻的Id用来作为储存附件的路径
-                        getNewId = newDao.GetNewsId(getNewsJson);
                         System.out.println("新闻的Id为"+getNewId);
 
                         //执行了这里以后都不用执行，然后把news的封面路径清空，以后便不会进入到这个地方
@@ -114,7 +117,7 @@ public class AddNewsServlet extends HttpServlet {
                     //之后要将将附件信息先保存到附件类中
                     viceFile = new ViceFile();
                     viceFile.setFileName(originalFileName);
-                    viceFile.setFilePath(saveDir.getPath()+"\\news_id："+getNewId+"\\"+originalFileName);
+                    viceFile.setFilePath(saveDir.getPath()+"\\news_id:"+getNewId+"\\"+originalFileName);
                     viceFile.setFilesUUID(getNewsJson.getFilesUUID());
                     viceFile.setNewsId(getNewId);
                     //将文件类插入数据库中
@@ -161,6 +164,8 @@ public class AddNewsServlet extends HttpServlet {
             out.write(feedBackString);
 
         }
+
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

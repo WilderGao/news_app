@@ -54,13 +54,17 @@ public class NewDaoImpl implements NewsDao {
                     break;
 
             }
-            resultSet.close();
             return newsList;
 
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-           JdbcUtil.free(conn,pstmt);
+            try {
+                resultSet.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            JdbcUtil.free(conn,pstmt);
         }
 
         return  null;
@@ -91,6 +95,22 @@ public class NewDaoImpl implements NewsDao {
             JdbcUtil.free(conn,pstmt);
         }
 
+    }
+
+    public void UpdateNews(News news){
+        try {
+            conn = JdbcUtil.getInstance().getConnection();
+            String sql = "UPDATE news SET news_facepath = ? WHERE news_id = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,news.getNewsFace());
+            pstmt.setInt(2,news.getNewsId());
+
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JdbcUtil.free(conn,pstmt);
+        }
     }
 
     /**
@@ -129,45 +149,57 @@ public class NewDaoImpl implements NewsDao {
      * @param newsId    新闻Id
      * @return
      */
-    public News GetNewsDetail(int newsId){
+    public synchronized News GetNewsDetail(int newsId){
         News news = new News();
+        Connection conns = JdbcUtil.getInstance().getConnection();
+        PreparedStatement pstmts = null;
+
         List<ViceFile> viceFileList = new ArrayList<>();
         try {
-            conn = JdbcUtil.getInstance().getConnection();
-            String sql = "SELECT * FROM vicefile RIGHT JOIN news ON news.news_id = vicefile.news_id WHERE vicefile.news_id = ?";
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(1,newsId);
+            String sql = "SELECT * FROM news WHERE news_id = ?";
+            pstmts = conns.prepareStatement(sql);
+            pstmts.setInt(1,newsId);
 
-            resultSet = pstmt.executeQuery();
-            if (resultSet == null)
-                return null;
-            while (resultSet.next()){
-                ViceFile viceFile = new ViceFile();
-                news.setNewsTitle(resultSet.getString("news_title"));
-                news.setNewsAuthor(resultSet.getString("news_author"));
-                news.setNewsBody(resultSet.getString("news_mainbody"));
-                news.setManagerId(resultSet.getInt("manager_id"));
-                news.setNewsId(resultSet.getInt("news_id"));
-                news.setNewsFace(resultSet.getString("news_facepath"));
-                viceFile.setFileId(resultSet.getInt("file_id"));
-                viceFile.setFileName(resultSet.getString("files_name"));
-                viceFile.setFilePath(resultSet.getString("files_path"));
-                viceFile.setFilesUUID(resultSet.getString("files_uuid"));
-                viceFile.setNewsId(resultSet.getInt("news_id"));
+            ResultSet resultSets = pstmts.executeQuery();
 
-                viceFileList.add(viceFile);
+            if (resultSets.next()) {
+                news.setNewsTitle(resultSets.getString("news_title"));
+                news.setNewsAuthor(resultSets.getString("news_author"));
+                news.setNewsBody(resultSets.getString("news_mainbody"));
+                news.setManagerId(resultSets.getInt("manager_id"));
+                news.setNewsId(resultSets.getInt("news_id"));
+                news.setNewsFace(resultSets.getString("news_facepath"));
             }
+            if (conns.isClosed())
+                conns = JdbcUtil.getInstance().getConnection();
+            resultSets.close();
+
+            String sqlSecond = "SELECT * FROM vicefile WHERE news_id = ?";
+            pstmts = conns.prepareStatement(sqlSecond);
+            pstmts.setInt(1,newsId);
+            ResultSet resultSetSecond = pstmts.executeQuery();
+            while (resultSetSecond.next()){
+                ViceFile viceFile = new ViceFile();
+                    viceFile.setFileId(resultSetSecond.getInt("files_id"));
+                    viceFile.setFileName(resultSetSecond.getString("files_name"));
+                    viceFile.setFilePath(resultSetSecond.getString("files_path"));
+                    viceFile.setFilesUUID(resultSetSecond.getString("files_uuid"));
+                    viceFile.setNewsId(resultSetSecond.getInt("news_id"));
+                    viceFileList.add(viceFile);
+            }
+            resultSetSecond.close();
             news.setFileList(viceFileList);
             return news;
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
             try {
-                resultSet.close();
+                pstmts.close();
+                conns.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            JdbcUtil.free(conn,pstmt);
+
         }
         return  null;
 
@@ -195,14 +227,17 @@ public class NewDaoImpl implements NewsDao {
         return StatusCode.Server_Error.getStatusCode();
     }
 
-    public List<News> GetCurrentNews(){
+    //同步锁
+    public synchronized List<News> GetCurrentNews(){
         try {
             List<News> newsList = new ArrayList<>();
-            conn = JdbcUtil.getInstance().getConnection();
-            String sql = "SELECT * FROM news ORDER BY news_id DESC";
-            pstmt = conn.prepareStatement(sql);
 
-            resultSet = pstmt.executeQuery();
+            conn = JdbcUtil.getInstance().getConnection();
+            String sql = "SELECT * FROM news  ORDER BY news_id DESC";
+            pstmt = conn.prepareStatement(sql);
+            int recordNum = 0;
+
+             resultSet = pstmt.executeQuery();
             while (resultSet.next()){
                 News news = new News();
                 news.setNewsTitle(resultSet.getString("news_title"));
@@ -211,7 +246,11 @@ public class NewDaoImpl implements NewsDao {
                 news.setNewsFace(resultSet.getString("news_facepath"));
                 news.setNewsBody(resultSet.getString("news_mainbody"));
                 news.setManagerId(resultSet.getInt("manager_id"));
+                news.setNewsTime(resultSet.getString("news_time"));
 
+                recordNum++;
+                if (recordNum>=10)
+                    break;
                 newsList.add(news);
             }
 
@@ -219,6 +258,12 @@ public class NewDaoImpl implements NewsDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
+            try {
+                resultSet.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
             JdbcUtil.free(conn,pstmt);
         }
         return null;

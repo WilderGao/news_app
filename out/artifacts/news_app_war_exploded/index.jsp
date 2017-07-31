@@ -12,6 +12,6 @@
     <title>$Title$</title>
   </head>
   <body>
-<a href="/photo/6.png">图片</a>
+<a href="/saved/news_id：65/汪峰 - 怒放的生命.mp3">图片</a>
   </body>
 </html>

@@ -102,12 +102,4 @@ public class News {
     }
 
 
-    public static void main(String[] args) {
-        try {
-            InetAddress inetAddress = InetAddress.getLocalHost();
-            System.out.println(inetAddress.getHostAddress());
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-    }
 }
