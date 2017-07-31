@@ -60,9 +60,9 @@ public class ApprovalManagerServlet extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            feedBack.setStatus(StatusCode.OK.getStatusCode()); // 一切正常
+            feedBack.setState(StatusCode.OK.getStatusCode()); // 一切正常
         } else {
-            feedBack.setStatus(StatusCode.Server_Error.getStatusCode()); // 服务器发生未知操作
+            feedBack.setState(StatusCode.Server_Error.getStatusCode()); // 服务器发生未知操作
         }
         response.getWriter().write(gson.toJson(feedBack));
     }

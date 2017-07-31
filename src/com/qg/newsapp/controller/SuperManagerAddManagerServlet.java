@@ -38,21 +38,21 @@ public class SuperManagerAddManagerServlet extends HttpServlet {
         manager = gson.fromJson(String.valueOf(sb), Manager.class); // 把JSON数据转换为一个Manager对象
         // 判断用户名是否已经存在
         if (managerService.emailIsExist(manager.getManagerAccount())) {
-            feedBack.setStatus(StatusCode.EMAIL_EXIST.getStatusCode());
+            feedBack.setState(StatusCode.EMAIL_EXIST.getStatusCode());
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
         // 判断用户名格式是否正确
         if (!managerService.isRigthEmail(manager.getManagerAccount())) {
-            feedBack.setStatus(StatusCode.EMAIL_FORMAT_IS_ERROR.getStatusCode());
+            feedBack.setState(StatusCode.EMAIL_FORMAT_IS_ERROR.getStatusCode());
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
         // 进行添加操作
         if (managerService.addManager(manager)) {
-            feedBack.setStatus(StatusCode.OK.getStatusCode()); // 正常添加
+            feedBack.setState(StatusCode.OK.getStatusCode()); // 正常添加
         } else {
-            feedBack.setStatus(StatusCode.Server_Error.getStatusCode()); // 未知错误
+            feedBack.setState(StatusCode.Server_Error.getStatusCode()); // 未知错误
         }
         response.getWriter().write(gson.toJson(feedBack));
     }

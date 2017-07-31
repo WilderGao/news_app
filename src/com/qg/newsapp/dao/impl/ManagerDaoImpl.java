@@ -42,7 +42,7 @@ public class ManagerDaoImpl implements ManagerDao {
             pstmt.setString(1, manager.getManagerAccount());
             pstmt.setString(2, manager.getManagerPassword());
             pstmt.setString(3, manager.getManagerName());
-            pstmt.setInt(4,0);
+            pstmt.setInt(4, 0);
             pstmt.setString(5, ManagerStatus.UNACTIVATION.getName());
             if (pstmt.executeUpdate() != 0) {
                 return true;
@@ -125,6 +125,7 @@ public class ManagerDaoImpl implements ManagerDao {
                 manager1.setManagerName(resultSet.getString(4));
                 manager1.setManagerSuper(resultSet.getInt(5));
                 manager1.setManagerStatus(resultSet.getString(6));
+                manager1.setOnline(resultSet.getInt(7));
             }
             return manager1;
         } catch (SQLException e) {
@@ -181,6 +182,7 @@ public class ManagerDaoImpl implements ManagerDao {
                 manager.setManagerName(resultSet.getString(4));
                 manager.setManagerSuper(resultSet.getInt(5));
                 manager.setManagerStatus(resultSet.getString(6));
+                manager.setOnline(resultSet.getInt(7));
                 return manager;
             }
         } catch (SQLException e) {
@@ -210,7 +212,7 @@ public class ManagerDaoImpl implements ManagerDao {
             pstmt.setString(1, manager.getManagerAccount());
             pstmt.setString(2, manager.getManagerPassword());
             pstmt.setString(3, manager.getManagerName());
-            pstmt.setInt(4,0);
+            pstmt.setInt(4, 0);
             pstmt.setString(5, ManagerStatus.NORMAL.getName());
             if (pstmt.executeUpdate() != 0) {
                 return true;
@@ -241,6 +243,7 @@ public class ManagerDaoImpl implements ManagerDao {
                 manager.setManagerName(resultSet.getString(4));
                 manager.setManagerSuper(resultSet.getInt(5));
                 manager.setManagerStatus(resultSet.getString(6));
+                manager.setOnline(resultSet.getInt(7));
                 return manager;
             }
         } catch (SQLException e) {
@@ -274,5 +277,22 @@ public class ManagerDaoImpl implements ManagerDao {
             JdbcUtil.close(pstmt, conn);
         }
 
+    }
+
+    @Override
+    public void updateManagerLoginStatus(int id, int loginStatus) {
+        Connection conn = JdbcUtil.getConnection();
+        PreparedStatement pstmt = null;
+        try {
+            String sql = "update manager set manager_online = ? where manager_id = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, loginStatus);
+            pstmt.setInt(2, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            JdbcUtil.close(pstmt, conn);
+        }
     }
 }

@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
+import com.qg.newsapp.dao.impl.ManagerDaoImpl;
 import com.qg.newsapp.model.FeedBack;
 import com.qg.newsapp.utils.StatusCode;
 
@@ -32,6 +33,7 @@ public class ManagerLogoutServlet extends HttpServlet {
                     return new JsonPrimitive(src);
                 }).create();
         FeedBack feedBack = new FeedBack();
+        ManagerDaoImpl dao = new ManagerDaoImpl();
 
         // 读取JSON数据
         BufferedReader br = new BufferedReader(new
@@ -42,8 +44,8 @@ public class ManagerLogoutServlet extends HttpServlet {
             sb.append(line);
         }
         Map<String, Integer> map = gson.fromJson(String.valueOf(sb), new TypeToken<Map<String, Integer>>(){}.getType());
-        request.getSession().removeAttribute(String.valueOf(map.get("managerId"))); // 移除Session
-        feedBack.setStatus(StatusCode.OK.getStatusCode());
+        dao.updateManagerLoginStatus(map.get("managerId"), 0);
+        feedBack.setState(StatusCode.OK.getStatusCode());
         response.getWriter().write(gson.toJson(feedBack));
     }
 

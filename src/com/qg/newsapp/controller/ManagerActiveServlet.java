@@ -30,11 +30,12 @@ public class ManagerActiveServlet extends HttpServlet {
         FeedBack feedBack = new FeedBack();
 
         if (managerService.active(code)) {
-            feedBack.setStatus(StatusCode.OK.getStatusCode()); // 一切正常
+            feedBack.setState(StatusCode.OK.getStatusCode()); // 一切正常
+            response.getWriter().write("恭喜你激活成功");
         } else {
-            feedBack.setStatus(StatusCode.Server_Error.getStatusCode()); // 服务器发生未知错误
+            feedBack.setState(StatusCode.Server_Error.getStatusCode()); // 服务器发生未知错误
+            response.getWriter().write("出现未知错误");
         }
-        response.getWriter().write(gson.toJson(feedBack));
 
     }
 }

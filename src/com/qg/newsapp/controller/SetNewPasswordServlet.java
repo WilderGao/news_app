@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.qg.newsapp.dao.impl.ManagerDaoImpl;
 import com.qg.newsapp.model.FeedBack;
+import com.qg.newsapp.service.ManagerService;
 import com.qg.newsapp.utils.StatusCode;
 
 import javax.servlet.ServletException;
@@ -26,6 +27,7 @@ public class SetNewPasswordServlet extends HttpServlet {
         Gson gson = new Gson();
         FeedBack feedBack = new FeedBack();
         ManagerDaoImpl dao = new ManagerDaoImpl();
+        ManagerService managerService = new ManagerService();
 
         // 获取JSON数据
         BufferedReader br = new BufferedReader(new
@@ -35,22 +37,43 @@ public class SetNewPasswordServlet extends HttpServlet {
         while ((line = br.readLine()) != null) {
             sb.append(line);
         }
-        Map<String, Object> map = gson.fromJson(String.valueOf(sb), new TypeToken<Map<String, Object>>() {
+        Map<String, String> map = gson.fromJson(String.valueOf(sb), new TypeToken<Map<String, String>>() {
         }.getType());
+        System.out.println(map);
+
+        // 邮箱格式不正确
+        if (!managerService.isRigthEmail(map.get("managerAccount"))) {
+            feedBack.setState(StatusCode.EMAIL_FORMAT_IS_ERROR.getStatusCode());
+            response.getWriter().write(gson.toJson(feedBack));
+            return;
+        }
+        // 邮箱不存在
+        if (!managerService.emailIsExist(map.get("managerAccount"))) {
+            feedBack.setState(StatusCode.EMAIL_IS_NOT_EXIST.getStatusCode());
+            response.getWriter().write(gson.toJson(feedBack));
+            return;
+        }
+        int state = managerService.getManagerStatus(map.get("managerAccount")); // 获取账户状态
+        if (state != StatusCode.OK.getStatusCode()) { // 不是正常状态
+            feedBack.setState(state);
+            response.getWriter().write(gson.toJson(feedBack));
+            return;
+        }
 
         String checkcode = (String) request.getSession().getAttribute(String.valueOf(map.get("managerAccount")));
+        System.out.println(checkcode);
         if (checkcode.equals(map.get("verifyCode"))) {
             if (dao.updatePassword((String) map.get("managerAccount"),
                     (String) map.get("managerPassword"))) {
-                feedBack.setStatus(StatusCode.OK.getStatusCode()); // 正常
+                feedBack.setState(StatusCode.OK.getStatusCode()); // 正常
                 response.getWriter().write(gson.toJson(feedBack));
             } else {
-                feedBack.setStatus(StatusCode.Server_Error.getStatusCode()); // 服务器错误
+                feedBack.setState(StatusCode.Server_Error.getStatusCode()); // 服务器错误
                 response.getWriter().write(gson.toJson(feedBack));
             }
             request.getSession().removeAttribute(String.valueOf(map.get("managerAccount")));
         } else {
-            feedBack.setStatus(StatusCode.VERIFYCODE_IS_ERROR.getStatusCode()); // 验证码不正确
+            feedBack.setState(StatusCode.VERIFYCODE_IS_ERROR.getStatusCode()); // 验证码不正确
             response.getWriter().write(gson.toJson(feedBack));
         }
     }

@@ -85,4 +85,11 @@ public interface ManagerDao {
      * @param id 管理员id
      */
     void deleteManagerById(int id);
+
+    /**
+     * 修改管理员的登录状态
+     * @param id 管理员id
+     * @param loginStatus 登录状态，1为登录，0为为登录
+     */
+    void updateManagerLoginStatus(int id, int loginStatus);
 }

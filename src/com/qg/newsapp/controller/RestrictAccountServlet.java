@@ -60,9 +60,9 @@ public class RestrictAccountServlet extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            feedBack.setStatus(StatusCode.OK.getStatusCode());
+            feedBack.setState(StatusCode.OK.getStatusCode());
         } else {
-            feedBack.setStatus(StatusCode.Server_Error.getStatusCode());
+            feedBack.setState(StatusCode.Server_Error.getStatusCode());
         }
         response.getWriter().write(gson.toJson(feedBack));
     }

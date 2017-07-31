@@ -1,8 +1,8 @@
 package com.qg.newsapp.controller;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.qg.newsapp.model.FeedBack;
-import com.qg.newsapp.model.Manager;
 import com.qg.newsapp.service.ManagerService;
 import com.qg.newsapp.utils.StatusCode;
 
@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Map;
 import java.util.Random;
 
 /**
@@ -24,10 +25,9 @@ public class SendCodeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Gson gson = new Gson();
-        Manager manager;
         ManagerService managerService = new ManagerService();
         FeedBack feedBack = new FeedBack();
-
+        Map<String, String> map;
         // 读取JSON数据
         BufferedReader br = new BufferedReader(new
                 InputStreamReader(request.getInputStream(), "UTF-8"));
@@ -36,35 +36,40 @@ public class SendCodeServlet extends HttpServlet {
         while ((line = br.readLine()) != null) {
             sb.append(line);
         }
-        manager = gson.fromJson(String.valueOf(sb), Manager.class);
+        map = gson.fromJson(String.valueOf(sb), new TypeToken<Map<String, String>>() {
+        }.getType());
+        System.out.println(map);
         // 邮箱格式不正确
-        if (!managerService.isRigthEmail(manager.getManagerAccount())) {
-            feedBack.setStatus(StatusCode.EMAIL_FORMAT_IS_ERROR.getStatusCode());
+        if (!managerService.isRigthEmail(map.get("managerAccount"))) {
+            feedBack.setState(StatusCode.EMAIL_FORMAT_IS_ERROR.getStatusCode());
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
         // 邮箱不存在
-        if (!managerService.emailIsExist(manager.getManagerAccount())) {
-            feedBack.setStatus(StatusCode.EMAIL_IS_NOT_EXIST.getStatusCode());
+        if (!managerService.emailIsExist(map.get("managerAccount"))) {
+            feedBack.setState(StatusCode.EMAIL_IS_NOT_EXIST.getStatusCode());
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
 
-        int state = managerService.getManagerStatus(manager.getManagerAccount()); // 获取账户状态
+        int state = managerService.getManagerStatus(map.get("managerAccount")); // 获取账户状态
         if (state != StatusCode.OK.getStatusCode()) { // 不是正常状态
-            feedBack.setStatus(state);
+            feedBack.setState(state);
             response.getWriter().write(gson.toJson(feedBack));
             return;
         }
         String checkcode = getCheckcode();
-        managerService.sendCheckcodeMail(manager.getManagerAccount(), checkcode);
-        feedBack.setStatus(StatusCode.OK.getStatusCode());
-        request.getSession().setAttribute(manager.getManagerAccount(), checkcode); // 存进Session
+        managerService.sendCheckcodeMail(map.get("managerAccount"),checkcode);
+        feedBack.setState(StatusCode.OK.getStatusCode());
+        //request.getSession().setMaxInactiveInterval(60 * 60); // Session过期时间为一个小时
+        request.getSession().setAttribute(map.get("managerAccount"), checkcode); // 存进Session
+        System.out.println(feedBack);
         response.getWriter().write(gson.toJson(feedBack));
     }
 
     /**
      * 获得随机的验证码
+     *
      * @return 验证码字符串
      */
     private String getCheckcode() {
