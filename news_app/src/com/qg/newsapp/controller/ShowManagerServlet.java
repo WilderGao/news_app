@@ -22,17 +22,21 @@ import java.util.List;
 @WebServlet(name = "ShowManagerServlet",urlPatterns={"/admin/showmanager"})
 public class ShowManagerServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         ManagerService managerService = new ManagerService();
         List<Manager> managers =  managerService.showManager();
         Gson gson = new Gson();
 
         FeedBack feedBack = new FeedBack();
 
-        feedBack.setStatus(StatusCode.OK.getStatusCode());
-        feedBack.setData(gson.toJson(managers));  // 将 Manager 类的 List 集转为 json 字符串存入 feedBack 中的Data属性
+        feedBack.setState(StatusCode.OK.getStatusCode());
+        // 将 Manager 类的 List 集转为 json 字符串存入 feedBack 中的Data属性
+        feedBack.setData(gson.toJson(managers));
+
 
         PrintWriter pw = new PrintWriter(response.getWriter());
-        pw.write(gson.toJson(feedBack));  // 将 feedBack 类转化为 json 字符串发送回移动端
+        // 将 feedBack 类转化为 json 字符串发送回移动端
+        pw.write(gson.toJson(feedBack));
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

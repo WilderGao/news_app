@@ -13,6 +13,7 @@ public class Manager {
     private  String managerName;        //管理员姓名
     private  int managerSuper;          //0为普通管理员，1为超级管理员
     private String managerStatus;       //管理员的状态，，“待审批”，“未激活”，“正常”，“被封号”
+    private int online;                 // 1为在线，0为不在线
     private List<News> newsList;        //管理员所对应的新闻
 
     public int getManagerId() {
@@ -69,5 +70,27 @@ public class Manager {
 
     public void setNewsList(List<News> newsList) {
         this.newsList = newsList;
+    }
+
+    public int getOnline() {
+        return online;
+    }
+
+    public void setOnline(int online) {
+        this.online = online;
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "managerId=" + managerId +
+                ", managerAccount='" + managerAccount + '\'' +
+                ", managerPassword='" + managerPassword + '\'' +
+                ", managerName='" + managerName + '\'' +
+                ", managerSuper=" + managerSuper +
+                ", managerStatus='" + managerStatus + '\'' +
+                ", online=" + online +
+                ", newsList=" + newsList +
+                '}';
     }
 }

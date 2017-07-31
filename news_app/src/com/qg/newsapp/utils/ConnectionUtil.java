@@ -56,14 +56,8 @@ public class ConnectionUtil {
         return conn;
     }
 
-    public void free(ResultSet rs, PreparedStatement st, Connection conn){
-        try {
-            if (rs != null) {
-                rs.close(); // 关闭结果集
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
+    public void free(PreparedStatement st, Connection conn){
+
             try {
                 if (st != null) {
                     st.close(); // 关闭Statement
@@ -79,6 +73,6 @@ public class ConnectionUtil {
                     e.printStackTrace();
                 }
             }
-        }
+
     }
 }

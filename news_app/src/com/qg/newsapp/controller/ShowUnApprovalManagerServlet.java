@@ -28,7 +28,8 @@ public class ShowUnApprovalManagerServlet extends HttpServlet {
 
         FeedBack feedBack = new FeedBack();
 
-        feedBack.setStatus(StatusCode.OK.getStatusCode());
+        feedBack.setState(StatusCode.OK.getStatusCode());
+        // 将 managers 以 json 的格式传入 feedback 中
         feedBack.setData(gson.toJson(managers));
 
         PrintWriter pw = new PrintWriter(response.getWriter());
