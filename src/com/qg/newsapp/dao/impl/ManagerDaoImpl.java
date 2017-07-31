@@ -27,7 +27,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(null, pstmt, conn);
+            connectionUtil.free(pstmt, conn);
         }
         return false;
     }
@@ -52,7 +52,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(null, pstmt, conn);
+            connectionUtil.free(pstmt, conn);
         }
         return false;
     }
@@ -75,7 +75,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(resultSet, pstmt, conn);
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                connectionUtil.free(pstmt, conn);
+            }
         }
         return 0;
     }
@@ -96,7 +104,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(null, pstmt, conn);
+            connectionUtil.free(pstmt, conn);
         }
         return false;
     }
@@ -127,7 +135,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-           connectionUtil.free(resultSet, pstmt, conn);
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                connectionUtil.free(pstmt, conn);
+            }
         }
         return null;
     }
@@ -148,7 +164,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(null, pstmt, conn);
+            connectionUtil.free(pstmt, conn);
         }
         return false;
     }
@@ -178,7 +194,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(resultSet, pstmt, conn);
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                connectionUtil.free(pstmt, conn);
+            }
         }
         return null;
     }
@@ -203,7 +227,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(null, pstmt, conn);
+            connectionUtil.free(pstmt, conn);
         }
         return false;
     }
@@ -233,7 +257,15 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-           connectionUtil.free(resultSet, pstmt, conn);
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                connectionUtil.free(pstmt, conn);
+            }
         }
         return null;
     }
@@ -251,7 +283,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(null, pstmt, conn);
+            connectionUtil.free(pstmt, conn);
         }
 
     }
@@ -270,7 +302,7 @@ public class ManagerDaoImpl implements ManagerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            connectionUtil.free(null, pstmt, conn);
+            connectionUtil.free(pstmt, conn);
         }
     }
 }

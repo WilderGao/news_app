@@ -5,7 +5,6 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 import java.beans.PropertyVetoException;
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 
@@ -16,7 +15,7 @@ public class ConnectionUtil {
     private static ConnectionUtil instance;
     private static ComboPooledDataSource dataSource;
 
-    private   ConnectionUtil() throws PropertyVetoException {
+    private ConnectionUtil() throws PropertyVetoException {
         dataSource = new ComboPooledDataSource();
 
         //设置数据库的参数
@@ -31,8 +30,8 @@ public class ConnectionUtil {
     }
 
     //判断只建立一个连接池
-    public static final ConnectionUtil getInstance(){
-        if(instance == null){
+    public static final ConnectionUtil getInstance() {
+        if (instance == null) {
             try {
                 instance = new ConnectionUtil();
             } catch (PropertyVetoException e) {
@@ -44,8 +43,8 @@ public class ConnectionUtil {
     }
 
     //创建连接
-    public synchronized final Connection getConnection(){
-        Connection conn = null ;
+    public synchronized final Connection getConnection() {
+        Connection conn = null;
         try {
             //这个getConnection和方法名含义
             conn = dataSource.getConnection();
@@ -56,28 +55,20 @@ public class ConnectionUtil {
         return conn;
     }
 
-    public void free(ResultSet rs, PreparedStatement st, Connection conn){
+    public void free(PreparedStatement st, Connection conn) {
         try {
-            if (rs != null) {
-                rs.close(); // 关闭结果集
+            if (st != null) {
+                st.close(); // 关闭Statement
             }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             try {
-                if (st != null) {
-                    st.close(); // 关闭Statement
+                if (conn != null) {
+                    conn.close(); // 关闭连接
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
-            } finally {
-                try {
-                    if (conn != null) {
-                        conn.close(); // 关闭连接
-                    }
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
             }
         }
     }
