@@ -1,9 +1,0 @@
-0 Mms [INFO] 07-31 18:10:39 下午 MxPushMessageReceiver, simIndex not ready for channel open event 
-155 Mms [INFO] 07-31 18:10:39 下午 MxPushMessageReceiver, simIndex not ready for channel open event 
-4724 Mms [INFO] 07-31 18:10:44 下午 MxStatusService, queryPendingPresence(Context context) 
-4829 Mms [INFO] 07-31 18:10:44 下午 MxStatusService, queryPendingPresence(Context context) 
-4829 Mms [INFO] 07-31 18:10:44 下午 MxResendService, dropped msg resent, count:0 
-4858 Mms [INFO] 07-31 18:10:44 下午 MxResendService, resend dropped mms, count: 0 
-4923 Mms [INFO] 07-31 18:10:44 下午 MxResendService, dropped msg resent, count:0 
-4923 Mms [INFO] 07-31 18:10:44 下午 MxResendService, resend dropped mms, count: 0 
-5247 Mms [INFO] 07-31 18:10:44 下午 SmsReportService, runnable mErrorStartId is -1 

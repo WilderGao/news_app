@@ -7,61 +7,166 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="286b4f0d-a350-431a-8c7d-3ea37478b246" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/VisitorDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/VisitorDaolmpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/filter/UniformEncodingFilter.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/MainPageServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/MainPageServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：0/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：0/microlog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：0/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：25/高键城-Socket多人聊天室-2017-7-17.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：26/.userReturn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：30/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：34/index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：36/.a4abbfab6ce553232b5448c2e97d2cb6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：36/.test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：36/.wkuser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：36/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：36/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：37/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：37/microlog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：37/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：38/apkpure_app_904.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：38/ma.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：38/猎鹿人2017.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：38/迅雷.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：46/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：47/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：48/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：49/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：50/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：51/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：52/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：53/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：54/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：55/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：56/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/.wkchannel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/IMG_20170731_203422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/IMG_20170731_204229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/Screenshot_2017-07-29-17-46-42-950_com.tencent.androidqqmail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/dctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/did" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/stun.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：57/wifi_config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：58/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：58/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：59/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：60/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：60/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：61/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：62/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：62/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：63/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：63/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：64/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：64/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：65/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：65/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：66/Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：66/汪峰 - 怒放的生命.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/saved/news_id：67/.kugouid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId45index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId46.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId47.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId48.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId49.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId50.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId51.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId52.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId53.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId54.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId55.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId56.wkcid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId57index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId58Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId59Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId60Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId61Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId62Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId63Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId64Beyond - 海阔天空.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/news_face/newsId65Beyond - 海阔天空.mp3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news_app" afterPath="$PROJECT_DIR$/news_app" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/VisitorDownloadDao.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/VisitorDownloadDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/NewDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/NewDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/VisitorDownloadDaolmpl.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/dao/impl/VisitorDownloadDaolmpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/News.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/News.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/ViceFile.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/model/ViceFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/service/DownloaderJudgeService.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/service/DownloaderJudgeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/AddNewsServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/AddNewsServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/DownloadDetailServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/DownloadDetailServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/FlashServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/FlashServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/NewsDetailServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/servlet/NewsDetailServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/LocalAddress.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/LocalAddress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$1.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$10.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$11.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$12.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$13.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$14.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$15.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$2.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$3.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$4.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$5.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$6.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$7.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$8.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$9.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode.class" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/WEB-INF/classes/com/qg/newsapp/utils/StatusCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/dao/impl/NewDaoImpl.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/dao/impl/NewDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/dao/impl/VisitorDownloadDaolmpl.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/dao/impl/VisitorDownloadDaolmpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/model/News.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/model/News.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/model/ViceFile.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/model/ViceFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/AddNewsServlet.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/AddNewsServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/DownloadTimesServlet$1.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/DownloadTimesServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/DownloadTimesServlet.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/DownloadTimesServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/FlashServlet.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/FlashServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/NewsDetailServlet.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/servlet/NewsDetailServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/com/qg/newsapp/utils/LocalAddress.class" afterPath="$PROJECT_DIR$/web/classes/com/qg/newsapp/utils/LocalAddress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news_app/out/artifacts/news_app_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/news_app/out/artifacts/news_app_war_exploded/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news_app/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/news_app/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/news_app_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/NewDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/NewDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/model/News.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/model/News.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/AddNewsServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/AddNewsServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/FlashServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/FlashServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/NewsDetailServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/NewsDetailServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/utils/LocalAddress.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/utils/LocalAddress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/MainPageServlet.java" afterPath="$PROJECT_DIR$/src/com/qg/newsapp/servlet/ReadServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,8 +181,8 @@
       <file leaf-file-name="NewDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/NewDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="201" column="0" lean-forward="true" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+            <state relative-caret-position="2291">
+              <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding>
                 <element signature="method#GetNewsSummary#0;class#NewDaoImpl#0" expanded="false" />
                 <element signature="docComment;method#AddNews#0;class#NewDaoImpl#0" expanded="false" />
@@ -107,7 +212,7 @@
       <file leaf-file-name="NewsDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/NewsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="232">
               <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="docComment;method#GetNewsSummary#0;class#NewsDao#0" expanded="false" />
@@ -122,8 +227,8 @@
       <file leaf-file-name="ReadServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/ReadServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="406">
+              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,7 +239,7 @@
       <file leaf-file-name="DeleteNewsServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/DeleteNewsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="812">
               <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
               <folding />
             </state>
@@ -144,7 +249,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="406">
               <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding />
             </state>
@@ -155,7 +260,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/VisitorDaolmpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#InsertVisitor#0;class#VisitorDaolmpl#0" expanded="false" />
@@ -168,8 +273,8 @@
       <file leaf-file-name="VisitorDownloadDaolmpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/VisitorDownloadDaolmpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="114" column="51" lean-forward="true" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+            <state relative-caret-position="667">
+              <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
               <folding>
                 <element signature="method#InsertVisitorDownLoad#0;class#VisitorDownloadDaolmpl#0" expanded="false" />
                 <element signature="method#VicefileDownloadDetail#0;class#VisitorDownloadDaolmpl#0" expanded="false" />
@@ -187,7 +292,7 @@
       <file leaf-file-name="FlashServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/FlashServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="725">
               <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
               <folding />
             </state>
@@ -197,8 +302,8 @@
       <file leaf-file-name="NewsDetailServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/NewsDetailServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="928">
-              <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            <state relative-caret-position="754">
+              <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -306,7 +411,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="234" />
     <option name="y" value="113" />
     <option name="width" value="976" />
@@ -328,10 +433,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -407,6 +508,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -727,6 +832,7 @@
       <workItem from="1501461828652" duration="9880000" />
       <workItem from="1501482521320" duration="11834000" />
       <workItem from="1501495097873" duration="25343000" />
+      <workItem from="1501548428701" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="gaojiancheng">
       <created>1501330998452</created>
@@ -767,14 +873,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130907000" />
+    <option name="totallyTimeSpent" value="131069000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -787,8 +893,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19259657" sideWeight="0.84388185" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19259657" sideWeight="0.15611814" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19527897" sideWeight="0.83712983" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19527897" sideWeight="0.16287015" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -800,6 +906,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1188,7 +1295,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/DeleteNewsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="812">
           <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding />
         </state>
@@ -1196,7 +1303,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="406">
           <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
           <folding />
         </state>
@@ -1204,8 +1311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/ReadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="406">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1214,7 +1321,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/FlashServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="725">
           <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
           <folding />
         </state>
@@ -1222,7 +1329,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/NewsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="232">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="docComment;method#GetNewsSummary#0;class#NewsDao#0" expanded="false" />
@@ -1236,7 +1343,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/VisitorDaolmpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#InsertVisitor#0;class#VisitorDaolmpl#0" expanded="false" />
@@ -1247,8 +1354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/VisitorDownloadDaolmpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="114" column="51" lean-forward="true" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+        <state relative-caret-position="667">
+          <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
           <folding>
             <element signature="method#InsertVisitorDownLoad#0;class#VisitorDownloadDaolmpl#0" expanded="false" />
             <element signature="method#VicefileDownloadDetail#0;class#VisitorDownloadDaolmpl#0" expanded="false" />
@@ -1264,8 +1371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/servlet/NewsDetailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="754">
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1274,8 +1381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qg/newsapp/dao/impl/NewDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="201" column="0" lean-forward="true" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+        <state relative-caret-position="2291">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding>
             <element signature="method#GetNewsSummary#0;class#NewDaoImpl#0" expanded="false" />
             <element signature="docComment;method#AddNews#0;class#NewDaoImpl#0" expanded="false" />
